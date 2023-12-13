@@ -1,4 +1,4 @@
-let number = prompt("Reqem yaz qardas?")
+let number = prompt("Reqem yaz qardas!")
 
 function countdrobs(inputNumber) {
     let count500 = 0;
@@ -42,13 +42,29 @@ function countdrobs(inputNumber) {
         inputNumber = inputNumber - 1;
         count1++;
     }
-    console.log("500 eded:", count500);
-    console.log("200 eded:", count200);
-    console.log("100 eded:", count100);
-    console.log("50 eded:", count50);
-    console.log("20 eded:", count20);
-    console.log("10 eded:", count10);
-    console.log("5 eded:", count5);
-    console.log("1 eded", count1);
+    if (count500 > 0) {
+        console.log("500 eded:", count500);
+    }
+    if (count200 > 0) {
+        console.log("200 eded:", count200);
+    }
+    if (count100 > 0) {
+        console.log("100 eded:", count100);
+    }
+    if (count50 > 0) {
+        console.log("50 eded:", count50);
+    }
+    if (count20 > 0) {
+        console.log("20 eded:", count20);
+    }
+    if (count10 > 0) {
+        console.log("10 eded:", count10);
+    }
+    if (count5 > 0) {
+        console.log("5 eded:", count5);
+    }
+    if (count1 > 0) {
+        console.log("1 eded", count1);
+    }
 }
 countdrobs(number);
